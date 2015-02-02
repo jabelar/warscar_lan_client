@@ -3,12 +3,42 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>sprHuskyRed</maskName>
   <events>
     <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>current_player = PLAYER1 // this is Player 1's object
+my_team = TEAM1
+input_style_tank = global.input_style_tank[current_player]
+input_style_turret = global.input_style_turret[current_player]
+player_type = HUMAN
+ai_target = ENEMY
+
+scrPlayerCreateEvent()
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
       <action>
         <libid>1</libid>
         <id>601</id>
@@ -25,27 +55,51 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scrControllerCreateEvent</script>
+            <script>scrPlayerAlarm3Event</script>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// this is the delay for the main gun
+
+</string>
           </argument>
         </arguments>
       </action>
@@ -67,111 +121,27 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scrControllerStepEvent</script>
+            <script>scrProcessPlayerStep</script>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="68">
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>scrNetworkingEvent</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="63">
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>-1</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -193,53 +163,27 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scrControllerDrawEvent</script>
+            <script>scrPlayerDrawEvent</script>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="8">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>network_destroy(socket_client)
-network_destroy(socket_listener)
-network_destroy(socket_broadcast)
-game_restart()
-</string>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -256,8 +200,5 @@ game_restart()
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints>
-    <point>16,16</point>
-    <point>16,16</point>
-  </PhysicsShapePoints>
+  <PhysicsShapePoints/>
 </object>

@@ -121,6 +121,40 @@
   </fonts>
   <objects name="objects">
     <object>objects\objController</object>
+    <object>objects\objCursor</object>
+    <objects name="Obstacles">
+      <object>objects\objBuilding1</object>
+      <object>objects\objBuilding2</object>
+      <object>objects\objBuilding3</object>
+      <object>objects\objBuilding4</object>
+      <object>objects\objWaterBigLake2Left</object>
+      <object>objects\objWaterBigLake2Right</object>
+      <object>objects\objWaterBigLake3</object>
+    </objects>
+    <objects name="Hindrances">
+      <object>objects\objSandBigLake3</object>
+      <object>objects\objSandBigLake2Left</object>
+      <object>objects\objSandBigLake2Right</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\objPlayer1</object>
+      <object>objects\objPlayer2</object>
+      <object>objects\objTracks</object>
+    </objects>
+    <objects name="Items">
+      <object>objects\objItemAmmo</object>
+      <object>objects\objItemHealth</object>
+    </objects>
+    <objects name="Flags">
+      <object>objects\objFlagBlue</object>
+      <object>objects\objFlagRed</object>
+    </objects>
+    <objects name="Weapons">
+      <object>objects\objProjectileShell</object>
+    </objects>
+    <objects name="Hazards">
+      <object>objects\objLandMine</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomMain</room>
