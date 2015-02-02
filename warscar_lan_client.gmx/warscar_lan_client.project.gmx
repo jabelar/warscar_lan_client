@@ -5,16 +5,73 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
+    <sound>sound\sndExplosion</sound>
+    <sound>sound\sndFanfare</sound>
+    <sound>sound\sndFlag</sound>
+    <sound>sound\sndItem</sound>
     <sound>sound\sndMainGun</sound>
+    <sound>sound\soundBackgroundOlypmics82</sound>
+    <sound>sound\soundBackgroundSpaceBattle</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\sprite0</sprite>
-    <sprite>sprites\sprite4</sprite>
-    <sprite>sprites\sprite1</sprite>
-    <sprite>sprites\sprObstacle</sprite>
-    <sprite>sprites\sprBullet</sprite>
+    <sprites name="Obstacles">
+      <sprite>sprites\sprBigLake2Left</sprite>
+      <sprite>sprites\sprBigLake2Right</sprite>
+      <sprite>sprites\sprBigLake3</sprite>
+      <sprite>sprites\sprBuilding1</sprite>
+      <sprite>sprites\sprBuilding2</sprite>
+      <sprite>sprites\sprBuilding3</sprite>
+      <sprite>sprites\sprBuilding4</sprite>
+    </sprites>
+    <sprite>sprites\sprIndicatorArrow</sprite>
+    <sprite>sprites\sprCursor</sprite>
+    <sprites name="Flags">
+      <sprite>sprites\sprFlagBlue</sprite>
+      <sprite>sprites\sprFlagRed</sprite>
+      <sprite>sprites\sprFlagAnimBlue</sprite>
+      <sprite>sprites\sprFlagAnimRed</sprite>
+    </sprites>
+    <sprites name="Home Bases">
+      <sprite>sprites\sprHomeBaseAnimBlue</sprite>
+      <sprite>sprites\sprHomeBaseAnimRed</sprite>
+      <sprite>sprites\sprHomeBaseBlue</sprite>
+      <sprite>sprites\sprHomeBaseRed</sprite>
+      <sprite>sprites\sprite16</sprite>
+    </sprites>
+    <sprites name="Items">
+      <sprite>sprites\sprItemAmmo</sprite>
+      <sprite>sprites\sprItemHealth</sprite>
+    </sprites>
+    <sprites name="Hazards">
+      <sprite>sprites\sprLandMineAnim</sprite>
+      <sprite>sprites\sprLandMine</sprite>
+      <sprite>sprites\sprLandMineAnimSmall</sprite>
+    </sprites>
+    <sprites name="Hindrances">
+      <sprite>sprites\sprSandBigLake2Left</sprite>
+      <sprite>sprites\sprSandBigLake2Right</sprite>
+      <sprite>sprites\sprBigLake3Sand</sprite>
+    </sprites>
+    <sprites name="Player">
+      <sprite>sprites\sprWeaponHuskyRed</sprite>
+      <sprite>sprites\sprWeaponHuskyBlue</sprite>
+      <sprite>sprites\sprTankBody1</sprite>
+      <sprite>sprites\sprTankMainGun</sprite>
+      <sprite>sprites\sprHuskyBlue</sprite>
+      <sprite>sprites\sprHuskyRed</sprite>
+      <sprite>sprites\sprTracks</sprite>
+    </sprites>
+    <sprites name="Weapons">
+      <sprite>sprites\sprProjectileShell</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bgGrass</background>
+    <background>background\bgGrassHD1</background>
+    <background>background\bgGrassHD2</background>
+    <background>background\bgTitle720p</background>
+    <background>background\bgTitle810p</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Events">
@@ -30,7 +87,7 @@
       </scripts>
       <scripts name="Initialization">
         <script>scripts\scrNetworkingConstants.gml</script>
-        <script>scripts\scrGameConstants.gml</script>
+        <script>scripts\scrNetworkingGameSpecificConstants.gml</script>
         <script>scripts\scrInitializeHUD.gml</script>
         <script>scripts\scrIntializeNetworking.gml</script>
       </scripts>
@@ -59,15 +116,14 @@
   <fonts name="fonts">
     <font>fonts\font0</font>
     <font>fonts\font1</font>
+    <font>fonts\fontMilitary</font>
+    <font>fonts\fontMilitaryStencil</font>
   </fonts>
   <objects name="objects">
     <object>objects\objController</object>
-    <object>objects\objPlayer</object>
-    <object>objects\objBullet</object>
-    <object>objects\objObstacle</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\roomMain</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

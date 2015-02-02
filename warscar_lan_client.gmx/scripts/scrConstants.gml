@@ -1,5 +1,5 @@
 /// scrConstants()
 
 scrNetworkingConstants()
-scrGameConstants() 
+scrNetworkingGameSpecificConstants() 
 

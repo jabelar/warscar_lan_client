@@ -49,3 +49,8 @@ tx_buff_broadcast = buffer_create( 256, buffer_grow, 1)
 
 // start the broadcasting alarm
 broadcast_alarm = room_speed * 3
+
+connected = false
+
+object_map = ds_map_create() // maps object ids on server to client
+
