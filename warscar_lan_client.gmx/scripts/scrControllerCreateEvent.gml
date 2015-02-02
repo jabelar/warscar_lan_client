@@ -7,4 +7,3 @@ scrInitializeHUD()
 show_debug_message("Initializing input booleans")
 scrClearInput()
 
-
