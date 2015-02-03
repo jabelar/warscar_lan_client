@@ -1,6 +1,8 @@
 /// scrObjectUpdate(rx_buff)
 var rx_buff = argument[0];
 
+// show_debug_message("Received object update packet")
+
 var obj_id = buffer_read(rx_buff, buffer_u32);
 var obj_x = buffer_read(rx_buff, buffer_s32);
 var obj_y = buffer_read(rx_buff, buffer_s32);

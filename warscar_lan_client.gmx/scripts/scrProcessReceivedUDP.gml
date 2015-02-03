@@ -27,7 +27,6 @@ switch packet_type
         }
         
         // show_debug_message("Server broadcast received from "+argument[1]+", name is "+server_name);
-        status_string = "Server broadcast received from "+argument[1]+", name is "+server_name
         break;
     }
     case NF_CLIENT_ANNOUNCE:

@@ -2,4 +2,5 @@
 
 scrNetworkingConstants()
 scrNetworkingGameSpecificConstants() 
-
+scrMapConstantsToObjects()
+scrMapConstantsToSounds()

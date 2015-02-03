@@ -78,6 +78,7 @@
       <script>scripts\scrControllerCreateEvent.gml</script>
       <script>scripts\scrControllerDrawEvent.gml</script>
       <script>scripts\scrControllerStepEvent.gml</script>
+      <script>scripts\scrNetworkingEvent.gml</script>
     </scripts>
     <scripts name="Utilities">
       <scripts name="Input">
@@ -86,6 +87,8 @@
       </scripts>
       <scripts name="Initialization">
         <script>scripts\scrConstants.gml</script>
+        <script>scripts\scrMapConstantsToObjects.gml</script>
+        <script>scripts\scrMapConstantsToSounds.gml</script>
         <script>scripts\scrNetworkingConstants.gml</script>
         <script>scripts\scrNetworkingGameSpecificConstants.gml</script>
         <script>scripts\scrInitializeHUD.gml</script>
@@ -93,7 +96,6 @@
       </scripts>
     </scripts>
     <scripts name="Networking">
-      <script>scripts\scrNetworkingEvent.gml</script>
       <scripts name="Received Packets">
         <script>scripts\scrCreateObject.gml</script>
         <script>scripts\scrObjectUpdate.gml</script>
@@ -102,7 +104,7 @@
         <script>scripts\scrCreateEffect.gml</script>
         <script>scripts\scrPlaySound.gml</script>
         <script>scripts\scrProcessReceivedUDP.gml</script>
-        <script>scripts\scrCrreateMapConstantsToObjects.gml</script>
+        <script>scripts\scrProcessReceivedTCP.gml</script>
       </scripts>
       <scripts name="Transmit Packets">
         <script>scripts\scrSendInputToServer.gml</script>
