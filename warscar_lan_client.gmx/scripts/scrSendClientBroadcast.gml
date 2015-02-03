@@ -1,5 +1,5 @@
 // broadcast client info
-// show_debug_message("Sending broadcast message")
+show_debug_message("Sending broadcast message")
 
 buffer_seek(tx_buff_broadcast, buffer_seek_start, 0)
 buffer_write(tx_buff_broadcast, buffer_u8, NF_CLIENT_ANNOUNCE)

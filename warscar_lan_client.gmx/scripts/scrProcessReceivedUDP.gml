@@ -2,6 +2,8 @@
 // argument1 is the ip_addr_rx
 // argument2 is the socket
 
+show_debug_message("Received UDP Packet")
+
 var packet_type = buffer_read(argument[0], buffer_u8)
 switch packet_type
 {

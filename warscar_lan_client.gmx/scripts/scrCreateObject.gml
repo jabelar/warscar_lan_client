@@ -1,6 +1,5 @@
 /// scrCreateObject(rx_buff, obj_index)
 var rx_buff = argument[0];
-var obj_index = argument[1];
 
 show_debug_message("Received object create packet")
 var obj_type = buffer_read(rx_buff, buffer_u8);
@@ -40,4 +39,3 @@ else
 {
     show_debug_message("Unrecognized object type")
 }
-

@@ -20,7 +20,7 @@ else
         }
         case NF_OBJ_CREATE:
         {
-            scrCreateObject(rx_buff, obj_index)
+            scrCreateObject(rx_buff)
             break;
         }
         case NF_OBJ_DESTROY:

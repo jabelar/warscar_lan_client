@@ -53,4 +53,3 @@ broadcast_alarm = room_speed * 3
 connected = false
 
 object_map = ds_map_create() // maps object ids on server to client
-
