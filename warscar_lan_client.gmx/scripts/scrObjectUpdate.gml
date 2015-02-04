@@ -31,6 +31,10 @@ else
     instance.image_speed = obj_image_speed
     instance.image_alpha = obj_image_alpha
     instance.image_blend = obj_image_blend
+    if obj_index == PLAYER1 or obj_index == PLAYER2
+    {
+        turret_image_angle[obj_index] = buffer_read(rx_buff, buffer_s32)
+    }
     
     // show_debug_message("Updated object "+string(instance)+" to x = "+string(obj_x))
 }

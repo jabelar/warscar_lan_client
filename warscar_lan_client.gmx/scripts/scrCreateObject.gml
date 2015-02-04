@@ -27,6 +27,10 @@ if not is_undefined(obj_index)
         new_instance.image_speed = obj_image_speed
         new_instance.image_alpha = obj_image_alpha
         new_instance.image_blend = obj_image_blend
+        if obj_index == PLAYER1 or obj_index == PLAYER2
+        {
+            turret_image_angle[obj_index] = buffer_read(rx_buff, buffer_s32)
+        }
         ds_map_add(object_map, inst_id, new_instance) // track server to client object mapping
         // show_debug_message("Object created for server id = "+string(inst_id)+", client id = "+string(new_instance)+" at x = "+string(obj_x)+" y = "+string(obj_y))
     }

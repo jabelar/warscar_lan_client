@@ -79,6 +79,9 @@
       <script>scripts\scrControllerDrawEvent.gml</script>
       <script>scripts\scrControllerStepEvent.gml</script>
       <script>scripts\scrNetworkingEvent.gml</script>
+      <script>scripts\scrControllerDrawGuiEvent.gml</script>
+      <script>scripts\scrPlayer1DrawEvent.gml</script>
+      <script>scripts\scrPlayer2DrawEvent.gml</script>
     </scripts>
     <scripts name="Utilities">
       <scripts name="Input">
