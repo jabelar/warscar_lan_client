@@ -37,11 +37,18 @@ switch packet_type
         if my_ip_address == "127.0.0.1" // default value
         {
             my_ip_address = ip_addr_rx
-            // show_debug_message("My IP address = "+string(my_ip_address))
+            show_debug_message("My IP address = "+string(my_ip_address))
         }
         else
         {
-            // show_debug_message("See client announce packet from IP address = "+string(ip_addr_rx))
+            if my_ip_address == ip_addr_rx
+            {
+                show_debug_message("My own broadcast")
+            }
+            else
+            {
+                // show_debug_message("See client announce packet from IP address = "+string(ip_addr_rx))
+            }
         }
         break;
     }

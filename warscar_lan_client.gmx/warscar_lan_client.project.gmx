@@ -76,12 +76,16 @@
   <scripts name="scripts">
     <scripts name="Events">
       <script>scripts\scrControllerCreateEvent.gml</script>
-      <script>scripts\scrControllerDrawEvent.gml</script>
       <script>scripts\scrControllerStepEvent.gml</script>
       <script>scripts\scrNetworkingEvent.gml</script>
-      <script>scripts\scrControllerDrawGuiEvent.gml</script>
-      <script>scripts\scrPlayer1DrawEvent.gml</script>
-      <script>scripts\scrPlayer2DrawEvent.gml</script>
+      <scripts name="Draw Event">
+        <script>scripts\scrControllerDrawEvent.gml</script>
+        <script>scripts\scrControllerDrawGuiEvent.gml</script>
+        <script>scripts\scrDrawHUD.gml</script>
+        <script>scripts\scrDrawDebug.gml</script>
+        <script>scripts\scrPlayer2DrawEvent.gml</script>
+        <script>scripts\scrPlayer1DrawEvent.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Utilities">
       <scripts name="Input">
@@ -113,10 +117,6 @@
         <script>scripts\scrSendInputToServer.gml</script>
         <script>scripts\scrSendClientBroadcast.gml</script>
       </scripts>
-    </scripts>
-    <scripts name="Drawing">
-      <script>scripts\scrDrawHUD.gml</script>
-      <script>scripts\scrDrawDebug.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">

@@ -1,6 +1,5 @@
 /// scrInitializeHUD()
 
-max_num_players = 32
 for (var i=0; i<max_num_players; i++)
 {
     player_active[i] = false

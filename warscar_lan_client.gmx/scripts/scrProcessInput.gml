@@ -7,4 +7,3 @@ key_left = gamepad_button_check(1, gp_padl) or gamepad_axis_value(1, gp_axislh) 
 
 key_weapon = gamepad_button_check_pressed(1, gp_face1) or gamepad_button_check_pressed(1, gp_shoulderr) or gamepad_button_check_pressed(1, gp_shoulderrb)
 
-
