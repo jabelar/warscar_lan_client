@@ -1,7 +1,7 @@
 /// scrCreateObject(rx_buff, obj_index)
 var rx_buff = argument[0];
 
-show_debug_message("Received object create packet")
+// show_debug_message("Received object create packet")
 var obj_type = buffer_read(rx_buff, buffer_u8);
 var obj_index = ds_map_find_value(const_obj_map, obj_type)
 if not is_undefined(obj_index)
@@ -28,7 +28,7 @@ if not is_undefined(obj_index)
         new_instance.image_alpha = obj_image_alpha
         new_instance.image_blend = obj_image_blend
         ds_map_add(object_map, inst_id, new_instance) // track server to client object mapping
-        show_debug_message("Object created for server id = "+string(inst_id)+", client id = "+string(new_instance)+" at x = "+string(obj_x)+" y = "+string(obj_y))
+        // show_debug_message("Object created for server id = "+string(inst_id)+", client id = "+string(new_instance)+" at x = "+string(obj_x)+" y = "+string(obj_y))
     }
     else
     {

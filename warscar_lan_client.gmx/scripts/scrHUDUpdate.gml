@@ -10,5 +10,4 @@ for (var i=0; i<max_num_players; i++)
     player_ammo[i] = buffer_read(rx_buff, buffer_u32)
 }
     
-show_debug_message("Received HUD update packet")
-
+// show_debug_message("Received HUD update packet")
