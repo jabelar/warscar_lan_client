@@ -4,7 +4,7 @@ var ip_addr_rx = argument[1];
 var socket_id = argument[2];
 
 
-show_debug_message("Received UDP Packet")
+// show_debug_message("Received UDP Packet")
 
 var packet_type = buffer_read(rx_buff, buffer_u8)
 switch packet_type
@@ -28,7 +28,7 @@ switch packet_type
             }
                 }
         
-        show_debug_message("Server broadcast received from "+ip_addr_rx+", name is "+server_name);
+        // show_debug_message("Server broadcast received from "+ip_addr_rx+", name is "+server_name);
         break;
     }
     case NF_CLIENT_ANNOUNCE:
