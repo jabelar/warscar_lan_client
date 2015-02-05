@@ -31,11 +31,11 @@ else
     instance.image_speed = obj_image_speed
     instance.image_alpha = obj_image_alpha
     instance.image_blend = obj_image_blend
-    if instance == objPlayer1.id
+    if instance_exists(objPlayer1) and instance == objPlayer1.id
     {
         turret_image_angle[0] = buffer_read(rx_buff, buffer_s32)
     }
-    if instance == objPlayer2.id
+    if instance_exists(objPlayer2) and instance == objPlayer2.id
     {
         turret_image_angle[1] = buffer_read(rx_buff, buffer_s32)
     }
