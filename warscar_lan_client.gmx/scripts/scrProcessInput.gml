@@ -1,8 +1,5 @@
 /// scrProcessInput()
 
-scrSavePreviousInput()
-scrClearInput()
-
 if instance_exists(objPlayer2)
 {
     // tank movement input
