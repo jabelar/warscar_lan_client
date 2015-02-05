@@ -2,7 +2,10 @@ scrProcessInput()
 
 if connected
 {
-    scrSendInputToServer()
+    if scrInputHasChanged()
+    {
+        scrSendInputToServer()
+    }
 }
 
 broadcast_alarm--

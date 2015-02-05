@@ -6,6 +6,7 @@ scrIntializeNetworking()
 
 show_debug_message("Initializing input booleans")
 scrClearInput()
+input_changed = false
 
 max_num_players = 2
 
@@ -19,4 +20,3 @@ music_level = 1.0
 scrInitializeHUD()
 
 gamepad_set_axis_deadzone(1, 0.2);
-

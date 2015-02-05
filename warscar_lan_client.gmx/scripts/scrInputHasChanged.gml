@@ -1,0 +1,9 @@
+///scrInputHasChanged()
+var has_changed;
+
+has_changed = (key_forward != key_forward_prev) or (key_backward != key_backward_prev)
+has_changed = has_changed or (key_right != key_right_prev) or (key_left != key_left_prev)
+has_changed = has_changed or (key_turret_right != key_turret_right_prev) or (key_turret_left != key_turret_left_prev)
+
+return has_changed ;
+

@@ -1,4 +1,7 @@
-scrClearInput(0)
+/// scrProcessInput()
+
+scrSavePreviousInput()
+scrClearInput()
 
 if instance_exists(objPlayer2)
 {
@@ -12,11 +15,11 @@ if instance_exists(objPlayer2)
     {
         if abs(ang_diff) < TANK_TURN_SPEED_BASE
         {
-            key_forward = true ;
+            key_forward = true
         }
         else if abs(ang_diff) > (180 - TANK_TURN_SPEED_BASE * 9)
         {
-            key_backward = true ;
+            key_backward = true 
         }
         else if ang_diff < 0
         {

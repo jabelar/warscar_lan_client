@@ -91,6 +91,8 @@
       <scripts name="Input">
         <script>scripts\scrClearInput.gml</script>
         <script>scripts\scrProcessInput.gml</script>
+        <script>scripts\scrInputHasChanged.gml</script>
+        <script>scripts\scrSavePreviousInput.gml</script>
       </scripts>
       <scripts name="Initialization">
         <script>scripts\scrConstants.gml</script>
