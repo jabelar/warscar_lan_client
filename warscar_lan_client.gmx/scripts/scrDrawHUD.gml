@@ -12,4 +12,3 @@ if view_current = 0
 if view_current = 1
 {
 }
-
