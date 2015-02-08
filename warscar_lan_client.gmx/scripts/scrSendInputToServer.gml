@@ -1,6 +1,6 @@
 /// scrSendInputToServer()
 
-show_debug_message("Sending input to server")
+// show_debug_message("Sending input to server")
 
 buffer_seek(tx_buff_client, buffer_seek_start, 0)
 buffer_write(tx_buff_client, buffer_u8, NF_INPUT) // player input

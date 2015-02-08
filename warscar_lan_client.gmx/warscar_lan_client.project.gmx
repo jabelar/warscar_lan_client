@@ -115,6 +115,7 @@
         <script>scripts\scrDestroyObject.gml</script>
         <script>scripts\scrCreateEffect.gml</script>
         <script>scripts\scrPlaySound.gml</script>
+        <script>scripts\scrRestart.gml</script>
         <script>scripts\scrProcessReceivedUDP.gml</script>
         <script>scripts\scrProcessReceivedTCP.gml</script>
       </scripts>
@@ -126,9 +127,8 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
-    <font>fonts\font1</font>
-    <font>fonts\fontMilitary</font>
     <font>fonts\fontMilitaryStencil</font>
+    <font>fonts\fontMessage</font>
   </fonts>
   <objects name="objects">
     <object>objects\objController</object>
