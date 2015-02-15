@@ -9,43 +9,55 @@ if is_undefined(rx_buff)
 }
 else
 {
-    var packet_type = buffer_read(rx_buff, buffer_u8);
-    // show_debug_message("Packet type = "+string(packet_type))
-    switch packet_type
+    if connected
     {
-        case NF_OBJ_UPDATE:
+        var packet_type = buffer_read(rx_buff, buffer_u8);
+        // show_debug_message("Packet type = "+string(packet_type))
+        switch packet_type
         {
-            scrObjectUpdate(rx_buff)
-            break;
+            case NF_OBJ_UPDATE:
+            {
+                scrObjectUpdate(rx_buff)
+                break;
+            }
+            case NF_OBJ_CREATE:
+            {
+                scrCreateObject(rx_buff)
+                break;
+            }
+            case NF_OBJ_DESTROY:
+            {
+                scrDestroyObject(rx_buff)
+                break;
+            }
+            case NF_EFFECT_CREATE:
+            {
+                scrCreateEffect(rx_buff)
+                break;
+            }
+            case NF_SOUND_PLAY:
+            {
+                scrPlaySound(rx_buff)
+                break;
+            }
+            case NF_HUD:
+            {
+                scrHUDUpdate(rx_buff)
+                break;
+            }
+            case NF_RESTART:
+            {
+                scrRestart(rx_buff)
+                break;
+            }
+            default: // unrecognized packet type
+            {
+                show_debug_message("Unrecognized packet type")
+            }
         }
-        case NF_OBJ_CREATE:
-        {
-            scrCreateObject(rx_buff)
-            break;
-        }
-        case NF_OBJ_DESTROY:
-        {
-            scrDestroyObject(rx_buff)
-            break;
-        }
-        case NF_EFFECT_CREATE:
-        {
-            scrCreateEffect(rx_buff)
-            break;
-        }
-        case NF_SOUND_PLAY:
-        {
-            scrPlaySound(rx_buff)
-            break;
-        }
-        case NF_HUD:
-        {
-            scrHUDUpdate(rx_buff)
-            break;
-        }
-        default: // unrecognized packet type
-        {
-            show_debug_message("Unrecognized packet type")
-        }
+    }
+    else
+    {
+        show_message("Currently not connected")
     }
 }

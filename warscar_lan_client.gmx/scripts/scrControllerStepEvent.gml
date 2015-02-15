@@ -8,7 +8,7 @@ if connected
 {
     if scrInputHasChanged()
     {
-        show_debug_message("Input has changed")
+        // show_debug_message("Input has changed")
         scrSendInputToServer()
     }
 }
