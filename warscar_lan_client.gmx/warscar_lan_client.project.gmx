@@ -76,6 +76,16 @@
   <scripts name="scripts">
     <scripts name="Events">
       <script>scripts\scrControllerCreateEvent.gml</script>
+      <scripts name="Initialization">
+        <script>scripts\scrConstants.gml</script>
+        <script>scripts\scrMapConstantsToObjects.gml</script>
+        <script>scripts\scrMapConstantsToSounds.gml</script>
+        <script>scripts\scrNetworkingConstants.gml</script>
+        <script>scripts\scrNetworkingGameSpecificConstants.gml</script>
+        <script>scripts\scrInitializeHUD.gml</script>
+        <script>scripts\scrIntializeNetworking.gml</script>
+        <script>scripts\scrGameConstants.gml</script>
+      </scripts>
       <script>scripts\scrControllerStepEvent.gml</script>
       <script>scripts\scrNetworkingEvent.gml</script>
       <scripts name="Draw Event">
@@ -93,16 +103,6 @@
         <script>scripts\scrProcessInput.gml</script>
         <script>scripts\scrInputHasChanged.gml</script>
         <script>scripts\scrSavePreviousInput.gml</script>
-      </scripts>
-      <scripts name="Initialization">
-        <script>scripts\scrConstants.gml</script>
-        <script>scripts\scrMapConstantsToObjects.gml</script>
-        <script>scripts\scrMapConstantsToSounds.gml</script>
-        <script>scripts\scrNetworkingConstants.gml</script>
-        <script>scripts\scrNetworkingGameSpecificConstants.gml</script>
-        <script>scripts\scrInitializeHUD.gml</script>
-        <script>scripts\scrIntializeNetworking.gml</script>
-        <script>scripts\scrGameConstants.gml</script>
       </scripts>
     </scripts>
     <scripts name="Networking">

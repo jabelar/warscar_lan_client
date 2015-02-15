@@ -14,4 +14,5 @@ buffer_write(tx_buff_client, buffer_bool, key_flag)
 buffer_write(tx_buff_client, buffer_bool, key_weapon1_pressed)
 buffer_write(tx_buff_client, buffer_bool, key_weapon2_pressed)
 buffer_write(tx_buff_client, buffer_bool, key_weapon3_pressed)
+
 network_send_packet(socket_client, tx_buff_client, buffer_tell(tx_buff_client) )
